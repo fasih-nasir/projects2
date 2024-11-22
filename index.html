@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearVinPro - Vehicle History Inspection Reports </title>
+  
+  <!-- SWEET ALERT -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- SWEET ALERT -->
+  <!--  -->
+  <link rel="shortcut icon" href="assets/dc3ed093-4729-4a71-90ce-59230868250e.jpg" type="image/x-icon">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- FONT FAMILY -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ANIMATION -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+  <!-- ANIMATION -->
+
+</head>
+<body>
+<!-- loader -->
+<div  class="  ld">
+ 
+<div class="animate__animated animate__bounceInDown  container-fluid d-flex justify-content-center align-items-center" id="loader">
+ <div class="loader col-3"></div>
+</div>
+
+</div>
+
+<!-- loader -->
+
+  <a href="#" id="fix" class="loader1 " style="z-index: 100 !important;">
+  </a>
+  <i class="fa-solid fa-arrow-up" id="fix"></i>
+  <header id="home" class="d-flex justify-content-center align-items-center h-100">
+      <!-- Bootstrap 5 Navbar -->
+       <div class="position-absolute  top-0 d-flex flex-column w-100">
+
+        <nav id="navbar" class="navbar navbar-expand-lg ">
+          <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand col-3" href="index.html">
+              <img id="log" src="assets/logo (1).png" class="img-fluid col-lg-3 col-4" alt="Logo">
+            </a>
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav py-1 ms-lg-5 px-4 me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="price.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#why">Why Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#dis">Disclaimer</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact-Us</a>
+                </li>
+              </ul>
+              <!-- Search Form -->
+              <!-- <form class=""> -->
+                <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+                <button class=" ms-1 cont py-2 px-3" id="contbnt" type="submit">Contact</button>
+             
+              <!-- </form> -->
+            </div>
+          </div>
+        
+        </nav>
+        
+
+    </div>
+    <!-- <div class="container-fluid">
+    </div> -->
+    
+    <section class=" py-5 mt-5 pt-5">
+      <div class="container d-flex flex-lg-row justify-content-center align-items-center flex-column ">
+    
+        <div class="col-lg-12 col-12 text-center  text-white">
+          <p class="text-uppercase fw-normal mb-2" >
+            <strong>Comprehensive Auto Inspections</strong>
+          </p>
+          <!-- Main Heading -->
+          <h1 class="display-1 text-uppercase fw-bold mb-3" >
+            VINs Inspected 
+          </h1>
+          <!-- Subheading -->
+          <p class="h4  mb-4 fw-bolder" >
+            Ensure your vehicle's history is <br> verified and your safety is prioritized.
+          </p>
+
+          
+         
+        </div>
+    
+    
+      </div>
+    </section>
+    
+
+  </header>
+
+  <!-- Offcanvas Menu for small and medium screens -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header hnb">
+      <h5 id="offcanvasRightLabel">
+        <img src="assets/image-removebg-preview.png" class="col-5" alt="">
+      </h5>
+      <button type="button" class=" text-light fgf " style="color: white !important;" data-bs-dismiss="offcanvas" aria-label="Close">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <div class="offcanvas-body d-flex justify-content-center align-items-center">
+       <ul class="navbar-nav d-flex justify-content-center align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="price.html">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#why">Why Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#dis">Disclaimer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact-Us</a>
+          </li>
+        </ul>
+    </div>
+  </div>      
+
+<!-- ABOUT US  -->
+ <div class="container d-flex justify-content-center align-items-center">
+  <!-- <div class="col-4 text-center pt-3 ">
+    <h2 class="display-6 text-dark pt-3 text-g">About Us</h2>
+
+  </div> -->
+ </div>
+<section class=" pb-5 m-0 p-0">
+  <div class="container-fluid   py-5">
+    <div class="row">
+      <!-- Image Column -->
+      <div class="col-lg-6 m-0 p-0 col-12 mb-4 mb-lg-0 ire1">
+        <!-- <img class="img-fluid rounded col-12 ire1" alt="hero" src="assets/Untitled design (4).png"> -->
+      </div>
+<!-- <div class="col-2"></div> -->
+      <!-- Text Content Column -->
+      <div class="col-lg-6 col-12 d-flex ire2 flex-column justify-content-center">
+      <!-- Updated Form HTML -->
+       <h2 class="text-center py-5">Get Your Report Now</h2>
+      <form id="form" class="col-12 d-flex flex-column justify-content-center align-items-center">
+
+        <!-- Full Name Input -->
+        <div class="mb-3 mt-2 col-lg-7 col-8">
+            <input type="text" id="full-name" name="full-name" class="form-control col-4" placeholder="Enter your full name" required>
+        </div>
+      
+        <!-- Email Input -->
+        <div class="mb-3 col-lg-7 col-8">
+            <input type="email" id="email" name="email" class="form-control col-4" placeholder="Enter your email address" required>
+        </div>
+      
+        <!-- VIN Number Input -->
+        <div class="mb-3 col-lg-7 col-8 d-flex flex-row justify-content-around mx-0">
+            <input type="text" id="vin-number" name="vin-number" class="col-12 p-2 rounded-1 form-control" placeholder="VIN-Num" required>
+        </div>
+      
+        <!-- Country Select Dropdown -->
+       
+      
+        <!-- Submit Button -->
+        <p class="text-muted mt-3">
+            <button class="px-4 py-2 repbtn fw-bold border-0" type="submit" id="fd1">Get Report Now</button>
+        </p>
+      </form>
+           
+    
+    </div>
+</div>
+  </div>
+</section>
+<!-- ABOUT US  -->
+ <!-- FAQS -->
+
+
+  <!-- FAQS -->
+<!-- WHY US -->
+ <div id="why"></div>
+<div class="container d-flex justify-content-center align-items-center my-5">
+  <div class="col-8 pb-5 text-center  ">
+    <h2 class="display-6 text-dark  text-g mt-5">ClearVinPro VS CarFax & Others </h2>
+
+  </div>
+ </div>
+<section class="text-center py-5 avoid">
+  <div class="container d-flex flex-column justify-content-center align-items-center">
+    <h3 class="mb-3 fw">AVOID OVERPAYING!</h3>
+    <p class="fw">Choose ClearVinPro — The service that is simple to use!</p>
+    <p class="col-lg-8 py-2 mb-5 text-center fw-bold">We've noticed it and are responding to it: Do you think Carfax is taking advantage of you? It's no secret that their vehicle history reports are expensive and only provide basic information.</p>
+    
+    <!-- Table -->
+   
+    <table class="bg-light table table-bordered text-center col-sm-10" style="width: 90% !important; border: 1px solid #dee2e6; border-radius: 5px;">
+      <!-- Table Header -->
+      <thead class="bg-light ">
+        <tr class="py-3">
+          <th>Report Contents</th>
+          <th>ClearVinPro</th>
+          <th>CarFax</th>
+          <th>Auto Check</th>
+          <th>InstaVIN</th>
+        </tr>
+      </thead>
+    
+      <!-- Table Body -->
+      <tbody>
+        <tr>
+          <td>Free Photo</td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+        </tr>
+        <tr>
+          <td>Odometer Reading</td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+        </tr>
+        <tr>
+          <td>Accident Check</td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+        </tr>
+        <tr>
+          <td>Title Check</td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+        </tr>
+        <tr>
+          <td>Fraud & Crime Information</td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Market Price Analysis</td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-check text-success"></i></td>
+        </tr>
+        <tr>
+          <td>Accurate Data Using government and third party databases</td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+
+        </tr>
+        <tr>
+          <td>Savings:  The competitors charge $55.95</td>
+          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-times text-danger"></i></td>
+        </tr>
+      </tbody>
+    </table>
+    
+      <!-- Table -->
+
+  </div>
+</section>
+<!-- WHY US -->
+<!-- RESULT -->
+<div class="container text-center PY-5 my-5">
+  <h2 class="fw-bold py-5">Refund Policy</h2>
+  <div class="my-3" style="width: 50px; height: 3px; background-color: #000; margin: 0 auto;"></div>
+  <p class="text-muted " style="margin-bottom: 60px !important;">
+    Dear Clients, Your money is completely safe. Our priority is to provide thorough vehicle history reports from an authorized NMVTIS, PPSR or DVLA provider to our customers. If there is any issue with our report, please notify us, and we will resolve it within 24 working hours. If we are unable to resolve it, we can provide you refund for that issue. Contact US and ask for a refund. This is really simple; your money will be refunded within 24 working hours. </p>
+</div>
+
+ <!-- RESULT -->
+<!-- DISCLIMER -->
+<div id="dis"></div>
+
+<div class="container-fluid d-flex justify-content-center align-items-center my-5 py-5" id="dic">
+  <div class="col-lg-9 col-12 d-flex justify-content-center align-items-center flex-column text-center py-4 text-white">
+    <h1 class="col-lg-3 col-12 text-center  mb-4">Disclaimer</h1>
+  <h6  class="py-3 dp col-12 text-center  fw-normal  px-3" >Dear Customers, if you have arrived here under the influence of fake SMS marketing or any other questionable behavior, please be aware that it has nothing to do with us. We only use social media marketing, SEO, and call center services to drive traffic to our website. We still encourage you to purchase our reports. We always do what we say we'll do, and if you're not satisfied with your purchase, you can get 100% of your money back.</>
+</div>
+</div>
+
+<!-- DISCLIMER -->
+ 
+<!-- CONTACT US  -->
+<!-- <h1 class="text-center mb-3">Contact</h1> -->
+<section class="py-5">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+      <!-- Text Content Section -->
+      <div class="col-lg-5 col-10 text-center mb-4 mb-lg-0">
+        <!-- Main Heading -->
+        <h2 class="fw-bold mb-3">Get in Touch</h2>
+        <!-- Subheading -->
+        <p class="text-secondary mb-4" style="font-size: 1.1rem;">
+          Happy to answer all your questions
+        </p>
+        <!-- Description -->
+        <p class="text-muted" style="font-size: 0.95rem;">
+          We carefully screen all of our cleaners, so you can rest assured that your home would receive the absolute highest quality of service providing. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.
+        </p>
+        <!-- Call to Action Buttons -->
+        <div class="d-flex justify-content-center gap-3 mt-4">
+          <a href="contact.html" class="btn btn-primary px-4 py-2">
+            Contact Us
+          </a>
+          <a href="faq.html" class="btn btn-outline-secondary px-4 py-2">
+            Learn More
+          </a>
+        </div>
+      </div>
+
+      <!-- Form Section -->
+      <div class="col-lg-7  col-12 p-5 rounded">
+        <form class="col-12 px-5 py-4" id="form2">
+          <!-- First Name and Last Name Fields -->
+          <div class="mb-3 row g-3" id="gt">
+            <div class="col-md-6">
+              <label for="first_name2" class="form-label">First Name</label>
+              <input type="text" name="first_name" id="first_name2" placeholder="Jane" required class="form-control" />
+            </div>
+            <div class="col-md-6">
+              <label for="last_name2" class="form-label">Last Name</label>
+              <input type="text" name="last_name" id="last_name2" placeholder="Doe" required class="form-control" />
+            </div>
+          </div>
+
+          <!-- Email Field -->
+          <div class="mb-3">
+            <label for="email2" class="form-label">Email Address</label>
+            <input type="email" name="email" id="email2" placeholder="you@example.com" required class="form-control" />
+          </div>
+
+          <!-- Message Field -->
+          <div class="mb-3">
+            <label for="message2" class="form-label">Message</label>
+            <textarea name="message" id="message2" placeholder="Your Feedback" rows="5" class="form-control" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary px-5 py-2">Send Now</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+<!-- CONTACT US  -->
+
+<!-- FOOTER -->
+ <!-- Include Font Awesome CDN in your <head> section -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-P4sYoB7+d4H61ktHpkFZP4ZAcjzpUpyM8sGFqt7FvxD2X4YYLvcX8U/87oUpHhOgiHjpddZgvwvMJfU2c0yVpA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+<footer class="text-muted body-font">
+ <div class="container d-flex justify-content-center py-2 align-items-center">
+  <p class="pt-2 fw-bold">Copyright © 2024, All Right Reserved</p>
+ </div>
+</footer>
+<!--  -->
+<!-- FOOTER -->
+  <!-- Bootstrap Bundle with Popper (JavaScript) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!-- Custom JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+   <script>
+    // location.reload()
+   </script>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
