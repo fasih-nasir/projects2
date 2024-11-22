@@ -17,7 +17,7 @@ window.addEventListener('scroll', function() {
 // loader
 setTimeout(function() {
   const loader = document.getElementById('loader');
-  
+ 
   // Add the animation class
   loader.classList.add('animate__animated', 'animate__slideOutUp');
   
@@ -231,50 +231,50 @@ document.getElementById('form').addEventListener('submit', async function (e) {
 
 // var home=document.getElementById("home")
 // home.style.backgroundImage="url('assets/dic.png')";
- const arr = ["HIDDEN PROBLEM", "MINOR DEFECT", " DETAILED ANALYSIS"];
-const arr1 = ["Don't buy, sell or trade a vehicle with", "Ensure transparency before buying, selling, or trading a vehicle.", " Make informed decisions with detailed vehicle insights."];
-const arr2 = [
-  "Helping you choose the right vehicle. The seller should always assume the responsibility of providing the car's history before selling it. You've done a great job with the website and service..",
-  "Empowering you to make informed decisions with comprehensive vehicle inspection reports. Sellers are encouraged to present full vehicle histories.",
-  "Our thorough inspection reports ensure you have a complete understanding of a vehicle's condition. Sellers are responsible for full transparency, so buyers can make confident, informed choices",
-];
+//  const arr = ["HIDDEN PROBLEM", "MINOR DEFECT", " DETAILED ANALYSIS"];
+// const arr1 = ["Don't buy, sell or trade a vehicle with", "Ensure transparency before buying, selling, or trading a vehicle.", " Make informed decisions with detailed vehicle insights."];
+// const arr2 = [
+//   "Helping you choose the right vehicle. The seller should always assume the responsibility of providing the car's history before selling it. You've done a great job with the website and service..",
+//   "Empowering you to make informed decisions with comprehensive vehicle inspection reports. Sellers are encouraged to present full vehicle histories.",
+//   "Our thorough inspection reports ensure you have a complete understanding of a vehicle's condition. Sellers are responsible for full transparency, so buyers can make confident, informed choices",
+// ];
 
-let num = 0;
-const textElement = document.getElementById("ide");
-const textElement1 = document.getElementById("ide1");
-const textElement2 = document.getElementById("ide2");
+// let num = 0;
+// const textElement = document.getElementById("ide");
+// const textElement1 = document.getElementById("ide1");
+// const textElement2 = document.getElementById("ide2");
 
-setInterval(() => {
-  // Apply the fade-out class to all elements at once
-  textElement.classList.remove("fade-up");
-  textElement1.classList.remove("fade-up");
-  textElement2.classList.remove("fade-up");
+// setInterval(() => {
+//   // Apply the fade-out class to all elements at once
+//   textElement.classList.remove("fade-up");
+//   textElement1.classList.remove("fade-up");
+//   textElement2.classList.remove("fade-up");
 
-  textElement.classList.add("fade-bottom");
-  textElement1.classList.add("fade-bottom");
-  textElement2.classList.add("fade-bottom");
+//   textElement.classList.add("fade-bottom");
+//   textElement1.classList.add("fade-bottom");
+//   textElement2.classList.add("fade-bottom");
 
-  setTimeout(() => {
-    // Change the text after the fade-out transition
-    num++;
-    if (num >= arr.length) {
-      num = 0; // Reset num to 0 once it reaches the end of the array
-    }
-    textElement.innerHTML = arr[num];
-    textElement1.innerHTML = arr1[num];
-    textElement2.innerHTML = arr2[num];
+//   setTimeout(() => {
+//     // Change the text after the fade-out transition
+//     num++;
+//     if (num >= arr.length) {
+//       num = 0; // Reset num to 0 once it reaches the end of the array
+//     }
+//     textElement.innerHTML = arr[num];
+//     textElement1.innerHTML = arr1[num];
+//     textElement2.innerHTML = arr2[num];
 
-    // Apply the fade-in class to all elements at once
-    textElement.classList.remove("fade-bottom");
-    textElement1.classList.remove("fade-bottom");
-    textElement2.classList.remove("fade-bottom");
+//     // Apply the fade-in class to all elements at once
+//     textElement.classList.remove("fade-bottom");
+//     textElement1.classList.remove("fade-bottom");
+//     textElement2.classList.remove("fade-bottom");
 
-    textElement.classList.add("fade-up");
-    textElement1.classList.add("fade-up");
-    textElement2.classList.add("fade-up");
+//     textElement.classList.add("fade-up");
+//     textElement1.classList.add("fade-up");
+//     textElement2.classList.add("fade-up");
 
-  }, 50); // Matches the duration of the opacity transition
-}, 6000); // Change text every 8 seconds to keep the new text visible for 8 seconds
+//   }, 50); // Matches the duration of the opacity transition
+// }, 6000); // Change text every 8 seconds to keep the new text visible for 8 seconds
 
 
 // 
