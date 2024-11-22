@@ -27,7 +27,7 @@ setTimeout(function() {
     document.querySelector('.ld').style.display = 'none'; // Hide the full-screen overlay
   }, { once: true }); // The listener will remove itself after being called once
   
-}, 2500); // 3500 milliseconds = 3.5 seconds
+},  3000); // 3500 milliseconds = 3.5 seconds
 
 // Import necessary Firebase modules
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
@@ -275,3 +275,7 @@ setInterval(() => {
 
   }, 50); // Matches the duration of the opacity transition
 }, 6000); // Change text every 8 seconds to keep the new text visible for 8 seconds
+
+
+// 
+// Add animation class when the element is in the viewport

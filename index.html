@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ClearVinPro - Vehicle History Inspection Reports </title>
+  <link rel="shortcut icon" href="assets/logo (1).png" type="image/x-icon">
   
   <!-- SWEET ALERT -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -32,8 +33,9 @@
 <!-- loader -->
 <div  class="  ld">
  
-<div class="animate__animated animate__bounceInDown  container-fluid d-flex justify-content-center align-items-center" id="loader">
- <div class="loader col-3"></div>
+<div class="animate__animated animate__bounceInDown  container-fluid d-flex justify-content-center flex-column align-items-center" id="loader">
+ <h4 class="text-white pb-3">ClearVinPro</h4>
+  <div class="loader col-3"></div>
 </div>
 
 </div>
@@ -95,8 +97,8 @@
     <section class=" py-5 mt-5 pt-5">
       <div class="container d-flex flex-lg-row justify-content-center align-items-center flex-column ">
     
-        <div class="col-lg-12 col-12 text-center  text-white">
-          <p class="text-uppercase fw-normal mb-2" >
+        <div class="col-lg-12 col-12 text-center  text-white animate__animated animate__bounceInDown one">
+          <p class="text-uppercase fw-normal mb-2  " >
             <strong>Comprehensive Auto Inspections</strong>
           </p>
           <!-- Main Heading -->
@@ -160,36 +162,30 @@
 <section class=" pb-5 m-0 p-0">
   <div class="container-fluid   py-5">
     <div class="row">
-      <!-- Image Column -->
-      <div class="col-lg-6 m-0 p-0 col-12 mb-4 mb-lg-0 ire1">
-        <!-- <img class="img-fluid rounded col-12 ire1" alt="hero" src="assets/Untitled design (4).png"> -->
+     
+      <div class="col-lg-6 m-0 p-0 col-12 mb-4 mb-lg-0 ire1 animate__animated  one animate__fadeInLeft">
+     
       </div>
-<!-- <div class="col-2"></div> -->
-      <!-- Text Content Column -->
-      <div class="col-lg-6 col-12 d-flex ire2 flex-column justify-content-center">
-      <!-- Updated Form HTML -->
+      <div class="col-lg-6 col-12 d-flex ire2 flex-column justify-content-center one  animate__animated animate__fadeInRight">
+
        <h2 class="text-center py-5">Get Your Report Now</h2>
       <form id="form" class="col-12 d-flex flex-column justify-content-center align-items-center">
 
-        <!-- Full Name Input -->
+
         <div class="mb-3 mt-2 col-lg-7 col-8">
             <input type="text" id="full-name" name="full-name" class="form-control col-4" placeholder="Enter your full name" required>
         </div>
       
-        <!-- Email Input -->
+
         <div class="mb-3 col-lg-7 col-8">
             <input type="email" id="email" name="email" class="form-control col-4" placeholder="Enter your email address" required>
         </div>
       
-        <!-- VIN Number Input -->
+
         <div class="mb-3 col-lg-7 col-8 d-flex flex-row justify-content-around mx-0">
             <input type="text" id="vin-number" name="vin-number" class="col-12 p-2 rounded-1 form-control" placeholder="VIN-Num" required>
         </div>
       
-        <!-- Country Select Dropdown -->
-       
-      
-        <!-- Submit Button -->
         <p class="text-muted mt-3">
             <button class="px-4 py-2 repbtn fw-bold border-0" type="submit" id="fd1">Get Report Now</button>
         </p>
@@ -207,24 +203,24 @@
   <!-- FAQS -->
 <!-- WHY US -->
  <div id="why"></div>
-<div class="container d-flex justify-content-center align-items-center my-5">
-  <div class="col-8 pb-5 text-center  ">
-    <h2 class="display-6 text-dark  text-g mt-5">ClearVinPro VS CarFax & Others </h2>
-
+<div class="container d-flex justify-content-center align-items-center">
+  <div class="col-lg-8 pb-5 text-center  ">
+    <h2 class="display-6 text-dark  text-g mt-1">ClearVinPro VS CarFax & Others </h2>
+    
+    <p class="fw">Opt for ClearVinPro — A straightforward and user-friendly service!</p>
+    <p class="col-lg-12 col-11  py-2  text-center fw-bold">Have you ever felt like Carfax is overcharging you? Their vehicle history reports come with a hefty price tag and offer only limited details.</p>
+    
   </div>
  </div>
 <section class="text-center py-5 avoid">
   <div class="container d-flex flex-column justify-content-center align-items-center">
-    <h3 class="mb-3 fw">AVOID OVERPAYING!</h3>
-    <p class="fw">Choose ClearVinPro — The service that is simple to use!</p>
-    <p class="col-lg-8 py-2 mb-5 text-center fw-bold">We've noticed it and are responding to it: Do you think Carfax is taking advantage of you? It's no secret that their vehicle history reports are expensive and only provide basic information.</p>
     
     <!-- Table -->
    
-    <table class="bg-light table table-bordered text-center col-sm-10" style="width: 90% !important; border: 1px solid #dee2e6; border-radius: 5px;">
+    <table class=" table  text-center col-sm-10" >
       <!-- Table Header -->
-      <thead class="bg-light ">
-        <tr class="py-3">
+      <thead class="tb ">
+        <tr class="py-3 mb-1" >
           <th>Report Contents</th>
           <th>ClearVinPro</th>
           <th>CarFax</th>
@@ -234,63 +230,64 @@
       </thead>
     
       <!-- Table Body -->
-      <tbody>
-        <tr>
+      <tbody >
+        <tr >
           <td>Free Photo</td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
         </tr>
+        
         <tr>
           <td>Odometer Reading</td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
         </tr>
         <tr>
           <td>Accident Check</td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
         </tr>
         <tr>
           <td>Title Check</td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
         </tr>
         <tr>
           <td>Fraud & Crime Information</td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-check  "></i></td>
         </tr>
         <tr>
           <td>Market Price Analysis</td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-check text-success"></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-check  "></i></td>
         </tr>
         <tr>
           <td>Accurate Data Using government and third party databases</td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
 
         </tr>
         <tr>
           <td>Savings:  The competitors charge $55.95</td>
-          <td><i class="fas fa-check text-success"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
-          <td><i class="fas fa-times text-danger"></i></td>
+          <td><i class="fas fa-check  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
+          <td><i class="fas fa-times  "></i></td>
         </tr>
       </tbody>
     </table>
@@ -323,68 +320,62 @@
  
 <!-- CONTACT US  -->
 <!-- <h1 class="text-center mb-3">Contact</h1> -->
-<section class="py-5">
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
+
+  <div class="container-fluid m-0">
+    <div class="d-flex row justify-content-center align-items-center">
       <!-- Text Content Section -->
-      <div class="col-lg-5 col-10 text-center mb-4 mb-lg-0">
+      <div class="col-lg-6  d-flex flex-column justify-content-center align-items-start ps-4 col-12 text-start mb-4 mb-lg-0 ire3 animate__animated  two animate__fadeInLeft">
         <!-- Main Heading -->
-        <h2 class="fw-bold mb-3">Get in Touch</h2>
+        <h1 class="fw-bold mb-3 color1">Get in Touch</h1>
         <!-- Subheading -->
-        <p class="text-secondary mb-4" style="font-size: 1.1rem;">
+        <p class="mb-4 display-5  fw-bold" >
           Happy to answer all your questions
         </p>
         <!-- Description -->
-        <p class="text-muted" style="font-size: 0.95rem;">
+        <p class="">
           We carefully screen all of our cleaners, so you can rest assured that your home would receive the absolute highest quality of service providing. Ultricies tristique nulla aliquet enim tortor at auctor urna nunc.
         </p>
-        <!-- Call to Action Buttons -->
-        <div class="d-flex justify-content-center gap-3 mt-4">
-          <a href="contact.html" class="btn btn-primary px-4 py-2">
-            Contact Us
-          </a>
-          <a href="faq.html" class="btn btn-outline-secondary px-4 py-2">
-            Learn More
-          </a>
-        </div>
+ 
       </div>
 
       <!-- Form Section -->
-      <div class="col-lg-7  col-12 p-5 rounded">
-        <form class="col-12 px-5 py-4" id="form2">
+      <div class="col-lg-6  col-12  ire4 animate__animated  two animate__fadeInRight">
+        <form class="col-12  px-5 py-4" id="form2">
+          <h2 class="mb-3 pb-3">Send a message to staff</h2>
           <!-- First Name and Last Name Fields -->
           <div class="mb-3 row g-3" id="gt">
             <div class="col-md-6">
               <label for="first_name2" class="form-label">First Name</label>
-              <input type="text" name="first_name" id="first_name2" placeholder="Jane" required class="form-control" />
+              <input type="text" name="first_name" id="first_name2" placeholder="Jane" required class="form-control fmg" />
             </div>
             <div class="col-md-6">
               <label for="last_name2" class="form-label">Last Name</label>
-              <input type="text" name="last_name" id="last_name2" placeholder="Doe" required class="form-control" />
+              <input type="text" name="last_name" id="last_name2" placeholder="Doe" required class="form-control fmg" />
             </div>
           </div>
 
           <!-- Email Field -->
           <div class="mb-3">
             <label for="email2" class="form-label">Email Address</label>
-            <input type="email" name="email" id="email2" placeholder="you@example.com" required class="form-control" />
+            <input type="email" name="email" id="email2" placeholder="you@example.com" required class="form-control fmg" />
           </div>
 
           <!-- Message Field -->
           <div class="mb-3">
             <label for="message2" class="form-label">Message</label>
-            <textarea name="message" id="message2" placeholder="Your Feedback" rows="5" class="form-control" required></textarea>
+            <textarea name="message" id="message2" placeholder="Your Feedback" rows="5" class="form-control fmg" required></textarea>
           </div>
 
           <!-- Submit Button -->
           <div class="d-flex justify-content-center">
-            <button type="submit" class="btn btn-primary px-5 py-2">Send Now</button>
+            <button type="submit" class="cont px-5 py-2">Send Now</button>
           </div>
         </form>
       </div>
     </div>
+
   </div>
-</section>
+
 
 
   
